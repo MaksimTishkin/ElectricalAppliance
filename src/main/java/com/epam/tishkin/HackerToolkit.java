@@ -12,9 +12,9 @@ public class HackerToolkit {
         totalEnergy.set(energyConsumption, newValue);
     }
 
-    public void setNewDeviceEnergy(int value, Device device) throws NoSuchFieldException, IllegalAccessException {
+    public void setNewDeviceEnergy(Device device, int newValue) throws NoSuchFieldException, IllegalAccessException {
         Field deviceField = Device.class.getDeclaredField("power");
         deviceField.setAccessible(true);
-        deviceField.set(device, value);
+        deviceField.set(device, newValue);
     }
 }

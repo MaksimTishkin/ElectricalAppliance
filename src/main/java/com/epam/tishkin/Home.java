@@ -14,10 +14,10 @@ public class Home {
     private final Mixer mixer;
     private final Television television;
 
-    public Home() {
-        hairdryer = new Hairdryer(1200);
-        mixer = new Mixer(800);
-        television = new Television(2500);
+    public Home(int hairdryerPower, int mixerPower, int televisionPower) {
+        hairdryer = new Hairdryer(hairdryerPower);
+        mixer = new Mixer(mixerPower);
+        television = new Television(televisionPower);
     }
 
     public List<Device> getDevices() {

@@ -5,7 +5,7 @@ public abstract class Device {
     final String name;
     boolean isTurnedOn;
 
-    protected Device(String name, int power) {
+    Device(String name, int power) {
         this.name = name;
         this.power = power;
     }
